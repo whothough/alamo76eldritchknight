@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Eldritch Champion</name>
-		<update version="0.4.1">
+		<update version="1.0.0">
 			<file name="class-eldritch-champion.xml" url="" />
 		</update>
 	</info>
