@@ -438,7 +438,7 @@
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Eldritch Invocation" supports="Eldritch Invocation" level="1" number="1" />
-		<rules>
+		</rules>
 	</element>
 	<element name="Adept Initiate" type="Class Feature" source="u/alamo76" id="ID_UA_CLASS_FEATURE_ARCANESECRETS_ADEPTINITIATE">
 		<supports>Arcane Secrets</supports>
