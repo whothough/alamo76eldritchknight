@@ -33,7 +33,7 @@
 			<stat name="intelligence" value="2" alt="Dragonmark" />
 			<select type="Racial Trait" name="Ability Score Increase, Mark of Detection" supports="Ability Score Increase,Dragonmark,!Intelligence" />
 			<grant type="Racial Trait" id="ID_WOTC_ERLW_RACIAL_TRAIT_MARK_OF_MAKING_ARTISANS_INTUITION" />
-			<grant type="Racial Trait" id="ID_WOTC_ERLW_RACIAL_TRAIT_CHANGELING_CHANGELING_INSTINCTS" />
+			<grant type="Racial Trait" id="ID_WOTC_ERLW_RACIAL_TRAIT_CHANGELING_SHAPECHANGER" />
 			<grant type="Racial Trait" id="ID_WOTC_ERLW_RACIAL_TRAIT_MARK_OF_MAKING_SPELLSMITH" />
 			<grant type="Racial Trait" id="ID_WOTC_ERLW_RACIAL_TRAIT_MARK_OF_MAKING_SPELLS_OF_THE_MARK" />
 		</rules>
