@@ -155,7 +155,12 @@
 			<description></description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Arcane Secrets" supports="Arcane Secrets" level="1" number="1" />
+			<select type="Class Feature" name="Arcane Secrets (Level 1)" supports="Arcane Secrets" level="1" number="1" />
+			<select type="Class Feature" name="Arcane Secrets (Level 3)" supports="Arcane Secrets" level="3" number="1" />
+			<select type="Class Feature" name="Arcane Secrets (Level 5)" supports="Arcane Secrets" level="5" number="1" />
+			<select type="Class Feature" name="Arcane Secrets (Level 9)" supports="Arcane Secrets" level="9" number="1" />
+			<select type="Class Feature" name="Arcane Secrets (Level 15)" supports="Arcane Secrets" level="15" number="1" />
+			<select type="Class Feature" name="Arcane Secrets (Level 18)" supports="Arcane Secrets" level="18" number="1" />
 		</rules>
 	</element>
 	<element name="Mystic Order" type="Class Feature" source="u/alamo76" id="ID_UA_CLASS_FEATURE_MYSTICORDER">
