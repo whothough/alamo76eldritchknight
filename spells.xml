@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>The Spells of the Eldritch Champion</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/whothough/alamo76eldritchknight/main/spells.xml" />
+		</update>
+	</info>
+	<element name="Arcane Focus" type="Spell" source="u/alamo76" id="ID_UA_EC_ARCANEFOCUS">
+		<supports>Eldritch Champion, Warlock, Wizard</supports>
+		<description>
+			<p>You channel your magic energy into and through a mundane item or weapon you are holding.</p>
+			<p class="indent">For the duration, this item becomes a spellcasting focus for you.</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a non-magical item or weapon</set>
+			<set name="duration">1 minute</set>
+			<set name="isConcentration">false</set>
+		</setters>
+	</element>	
+	<element name="Vanishing Strike" type="Spell" source="u/alamo76" id="ID_UA_EC_VANISHINGSTRIKE">
+		<supports>Eldritch Champion, Artificer, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>The next time you hit a creature with a melee weapon attack during the spell's duration, the target suffers the weapon attack's normal effects and you become invisible to the target until the end of your next turn or until you make another attack or cast a spell. If you attack the same target whilst invisible, the target takes an aditional 1d6 force damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, each target takes 1d6 extra force damage for each slot evel above 1st.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="duration">Concentration, 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>	
+	<element name="Wretched Blade" type="Spell" source="u/alamo76" id="ID_UA_EC_WRETCHEDBLADE">
+		<supports>Eldritch Champion, Artificer, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>The next time you hit a creature with a melee weapon attack during the spell's duration, a sickening energy leeches out from your blade, and the attack deals an extra 1d6 necrotic damage to the target. In addition, the target must subtract 1d4 from the next attack roll or saving throw it makes before the end of your next turn.</p>
+			<p class="indent">If the target rolls a 4 on its d4, the target must subtract 1d4 from the next attack roll or saving throw it makes. This continues until the target does not roll a 4, or the spell ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, each target takes 1d6 extra force damage for each slot evel above 1st.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Necrotic</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="duration">Concentration, 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>	
+	<element name="Grim's Gambit" type="Spell" source="u/alamo76" id="ID_UA_EC_GRIMSGAMBIT">
+		<supports>Eldritch Champion, Artificer, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>As a part of the casting, you cut the palm of your hand wielding your weapon, binding yourself to it. For the duration, you cannot be disarmed of this weapon by any means and can add your spellcasting modifier to concentration checks to maintain this spell.</p>
+			<p class="indent">At the beginning of each subsequent turn,  you take 1d4 necrotic damage, which can't be reduced in any way, as your life force is drawn into the sword. If as a result of this damage you would drop to 0HP, the spell ends, you instead drop to 1HP, and are incapacitated until the end of your next turn.</p>
+			<p class="indent">Any weapon or spell attack that hits you on that turn deals extra necrotic damage equal to the roll plus an additional 1d4. With each turn, the necrotic damage increases by 1d4.</p>
+			<p class="indent">When a creature you have attacked while the spell is active dies, you can use your reaction to end the spell without penalty. If the spell ends early for any other reason, such as dropping concentration, you take 2d6 necrotic damage as the binding is severed.</p>
+			<p class="indent">A 'remove curse' cast on this weapon ends this spell early without taking the additional damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, your weapon attacks deal an additional 1d4 necrotic damage for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Necrotic</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon worth at least 1 sp</set>
+			<set name="duration">Concentration, 10 minutes</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>	
+	<element name="Substitution" type="Spell" source="u/alamo76" id="ID_UA_EC_SUBSTITUTION">
+		<supports>Eldritch Champion, Artificer, Ranger, Warlock, Wizard</supports>
+		<description>
+			<p>When you cast this spell, choose an unoccupied location within range. You become incorporial and instantly teleport to this location in a puff of smoke or fog, leaving behind a conjured item (chosen beforehand) in your place. If the attack was a ranged or melee attack, or an area of effect for which you are no longer in range, you take no damage. If you are still within range of an area of effect, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. The conjured item disappears at the beginning of your next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can choose to teleport back to your original location at the beginning of your next turn.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell.</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a miniature carving or version of the item used in the spell</set>
+			<set name="duration">Concentration, 1 round</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>	
+	<element name="Temporal Rift" type="Spell" source="u/alamo76" id="ID_UA_EC_TEMPORALRIFT">
+		<supports>Eldritch Champion, Artificer, Sorcerer Warlock, Wizard</supports>
+		<description>
+			<p>The next time you hit a creature with a weapon attack during the spell's duration, you cause a temporary tear in the fabric of time, locking a creature in a moment of time. The target must make a Wisdom saving throw. On a failed save, the creature takes 2d6 force damage, is restrained until the end of your next turn, and must repeat the saving throw at the beginning of its next turn, becoming incapacitated on a failure. On a success, the target takes 1d6 force damage and the spell ends.</p>
+			<p class="indent">Until the spell ends, as an action on subsequent turns, you can maintain the tear, causing the creature to experience the same moment again. The target must then make a Wisdom saving throw, taking the same weapon and spell damage again on a failed save, and remaining incapacitated and restrained until the end of their next turn, or half as much on a successful one. On a success, the target is no longer incapacitated at the end of your turn, and is no longer restrained at the end of their next turn.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of sand</set>
+			<set name="duration">Concentration, 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>	
+	<element name="Blade Barrage" type="Spell" source="u/alamo76" id="ID_UA_EC_BLADEBARRAGE">
+		<supports>Eldritch Champion, Artificer, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You conjure 4 spectral blades that hover around you. As a bonus action, you can command each blade to move to attack a target within range that you can see, making a melee spell attack with each sword. If two or more blades attack the same target, these attacks gain advantage. Each sword deals 3d6 magical slashing damage.</p>
+			<p class="indent">As an action for the duration of the spell, you can choose new targets or continue to attack the same ones.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the number of blades increases by 1 and the damage each blade deals increased by 1d6 for each slot above 5th.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="duration">Concentration, 1 minute</set>
+			<set name="isConcentration">true</set>
+		</setters>
+	</element>	
+</elements>
