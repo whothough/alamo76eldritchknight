@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Eldritch Champion</name>
-		<update version="0.1.5">
+		<update version="1.0.0">
 			<file name="eldritch-champion.index" url="https://raw.githubusercontent.com/whothough/alamo76eldritchknight/main/eldritch-champion.index" />
 		</update>
 	</info>
