@@ -155,16 +155,6 @@
 			<description>You regain 1d10+{{level:fighter}} hp.</description>
 		</sheet>
 	</element>
-	<element name="Action Surge" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ACTIONSURGE">
-		<description>
-			<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
-			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
-		</description>
-		<sheet usage="1/Short Rest">
-			<description>On your turn, you can take one additional action on top of your regular action.</description>
-			<description usage="2/Short Rest" level="17">On your turn, you can take one additional action on top of your regular action.</description>
-		</sheet>
-	</element>
 	<element name="Martial Archetype" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MARTIALARCHETYPE">
 		<description>
 			<p>At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. The Champion archetype is detailed at the end of the class description; see the Player’s Handbook for information on other martial archetypes. Your archetype grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.</p>
@@ -172,6 +162,73 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Archetype" name="Martial Archetype" supports="Martial Archetype" level="3" />
+		</rules>
+	</element>
+	<element name="Surge Magic" type="Class Feature" source="u/alamo76" id="ID_UA_CLASS_FEATURE_SURGEMAGIC">
+		<description>
+			<p>Your arcane research and the magic bestowed on you by your patron have given you facility with spells.</p>
+			<h5>CANTRIPS</h5>
+			<p>You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table.</p>
+			<h5>SPELL SLOTS</h5>
+			<p>The Warlock table shows how many spell slots you have to cast your warlock spells of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.</p>
+			<p class="indent">For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell witch bolt, you must spend one of those slots, and you cast it as a 3rd-level spell.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>At 1st level, you know two 1st-level spells of your choice from the warlock spell list.</p>
+			<p class="indent">The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what’s shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.</p>
+			<p class="indent">
+				<b>Spell save DC</b> = 8 + your proficiency bonus + your Charisma modifier</p>
+			<p class="indent">
+				<b>Spell attack modifier</b> = your proficiency bonus + your Charisma modifier</p>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use an arcane focus as a spellcasting focus for your warlock spells.</p>
+		</description>
+		<sheet display="false">
+			<description>Your arcane research and the magic bestowed on you by your patron have given you facility with spells. You have {{warlock:spellcasting:slots:count}} slots of level {{warlock:spellcasting:slot}}</description>
+		</sheet>
+		<spellcasting name="Eldritch Champion" ability="Intelligence" allowReplace="true">
+			<list></list>
+		</spellcasting>
+		<rules>
+			<!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_SOLO" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+			<stat name="warlock:spellcasting:slots:count" value="1" level="2"/>
+			<stat name="warlock:spellcasting:slots:count" value="1" level="3"/>
+
+			<stat name="warlock:spellcasting:slot" value="1" level="2" />
+			<stat name="warlock:spellcasting:slot" value="2" level="5" />
+			<stat name="warlock:spellcasting:slot" value="3" level="9" />
+			<stat name="warlock:spellcasting:slot" value="1" level="13" />
+			<stat name="warlock:spellcasting:slot" value="1" level="17" />
+
+			<!-- negative count to remove slots -->
+			<stat name="warlock:spellcasting:slots:1" value="warlock:spellcasting:slots:count" level="2" />
+			<stat name="warlock:spellcasting:slots:1" value="-warlock:spellcasting:slots:count" level="5" />
+			<stat name="warlock:spellcasting:slots:2" value="warlock:spellcasting:slots:count" level="5" />
+			<stat name="warlock:spellcasting:slots:2" value="-warlock:spellcasting:slots:count" level="9" />
+			<stat name="warlock:spellcasting:slots:3" value="warlock:spellcasting:slots:count" level="9" />
+			<stat name="warlock:spellcasting:slots:3" value="-warlock:spellcasting:slots:count" level="13" />
+			<stat name="warlock:spellcasting:slots:4" value="warlock:spellcasting:slots:count" level="13" />
+			<stat name="warlock:spellcasting:slots:4" value="-warlock:spellcasting:slots:count" level="17" />
+			<stat name="warlock:spellcasting:slots:5" value="warlock:spellcasting:slots:count" level="17" />
+
+			<select type="Spell" name="Cantrip (Eldritch Champion)" supports="$(spellcasting:list),0" level="2" number="2" spellcasting="Eldritch Champion" />
+			<select type="Spell" name="Cantrip (Eldritch Champion)" supports="$(spellcasting:list),0" level="5" spellcasting="Eldritch Champion" />
+			<select type="Spell" name="Cantrip (Eldritch Champion)" supports="$(spellcasting:list),0" level="11" spellcasting="Eldritch Champion" />
+
+			<select type="Spell" name="Spellcasting (Eldritch Champion)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" number="2" spellcasting="Eldritch Champion"/>
+			<select type="Spell" name="Spellcasting (Eldritch Champion)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Eldritch Champion"/>
+			<select type="Spell" name="Spellcasting (Eldritch Champion)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Eldritch Champion"/>
+			<select type="Spell" name="Spellcasting (Eldritch Champion)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Eldritch Champion"/>
+			<select type="Spell" name="Spellcasting (Eldritch Champion)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Eldritch Champion"/>
+			<select type="Spell" name="Spellcasting (Eldritch Champion)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Eldritch Champion"/>
+			<select type="Spell" name="Spellcasting (Eldritch Champion)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Eldritch Champion"/>
+			<select type="Spell" name="Spellcasting (Eldritch Champion)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Eldritch Champion"/>
+			<select type="Spell" name="Spellcasting (Eldritch Champion)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Eldritch Champion"/>
+			<select type="Spell" name="Spellcasting (Eldritch Champion)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Eldritch Champion"/>
 		</rules>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER">
