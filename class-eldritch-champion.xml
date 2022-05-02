@@ -172,7 +172,19 @@
 			<description>Your arcane research and inclusion among the ranks of eldritch champions has granted you the facility to cast spells. You have {{eldritch:spellcasting:slots:count}} slots of level {{eldritch:spellcasting:slot}}</description>
 		</sheet>
 		<spellcasting name="Eldritch Champion" ability="Intelligence" allowReplace="true">
-			<list></list>
+			<list>Wizard</list>
+		</spellcasting>
+		<spellcasting name="Sorcerer" extend="true">
+			<extend>Warlock</extend>
+		</spellcasting>
+		<spellcasting name="Sorcerer" extend="true">
+			<extend>Sorcerer</extend>
+		</spellcasting>
+		<spellcasting name="Sorcerer" extend="true">
+			<extend>Cleric</extend>
+		</spellcasting>
+		<spellcasting name="Sorcerer" extend="true">
+			<extend>Druid</extend>
 		</spellcasting>
 		<rules>
 			<!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
