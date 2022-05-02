@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Eldritch Champion</name>
-		<update version="1.0.0">
+		<update version="1.1.0">
 			<file name="class-eldritch-champion.xml" url="" />
 		</update>
 	</info>
@@ -169,7 +169,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Mystic Order" name="Mystic Order" supports="Mystic Order" level="3" />
+			<select type="Archetype" name="Mystic Order" supports="Mystic Order" level="3" />
 		</rules>
 	</element>
 	<element name="Surge Magic" type="Class Feature" source="u/alamo76" id="ID_UA_CLASS_FEATURE_SURGEMAGIC">
@@ -555,7 +555,7 @@
 	</element>
 	
 	<!-- Mystic Orders: Dragon -->
-	<element name="Dragon" type="Mystic Order" source="u/alamo76" id="ID_UA_MYSTICORDER_DRAGON">
+	<element name="Dragon" type="Archetype" source="u/alamo76" id="ID_UA_MYSTICORDER_DRAGON">
 		<supports>Mystic Order</supports>
 		<description>
 			<p>The Order of the Dragon</p>
@@ -629,7 +629,7 @@
 	</element>
 	
 		<!-- Mystic Orders: Essences -->
-	<element name="Essences" type="Mystic Order" source="u/alamo76" id="ID_UA_MYSTICORDER_ESSENCES">
+	<element name="Essences" type="Archetype" source="u/alamo76" id="ID_UA_MYSTICORDER_ESSENCES">
 		<supports>Mystic Order</supports>
 		<description>
 			<p>The Order of the Essences</p>
