@@ -5,8 +5,8 @@
 			<file name="mark-of-making-changeling.xml" url="https://raw.githubusercontent.com/whothough/alamo76eldritchknight/main/mark-of-making-changeling.xml" />
 		</update>
 	</info>
-	<element name="Mark of Making" type="Race Variant" source="Ben's Homebrew" id="ID_BH_RACE_VARIANT_CHANGELING_MARK_OF_MAKING">
-		<supports>Changeling</supports>
+	<element name="Changeling Mark of Making" type="Race Variant" source="Ben's Homebrew" id="ID_BH_RACE_VARIANT_CHANGELING_MARK_OF_MAKING">
+		<supports>Human</supports>
 		<description>
 			<p>The Mark of Making guides its bearer through any act of creation. The bearer of the mark can mend broken things with a touch, and always has a minor magic item they’ve been working on. An artificer or a wizard will get the most out of the mark, but anyone can find a use for an enchanted blade.</p>
 			<p>If your human character has the Mark of Making, the following traits replace the human’s Ability Score Increase trait in the Player’s Handbook.</p>
