@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="1.0.0">
 			<file name="mark-of-making-changeling.xml" url="https://raw.githubusercontent.com/whothough/alamo76eldritchknight/main/mark-of-making-changeling.xml" />
 		</update>
 	</info>
