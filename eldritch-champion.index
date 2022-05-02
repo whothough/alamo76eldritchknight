@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Eldritch Champion</name>
+		<update version="0.1.5">
+			<file name="eldritch-champion.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/tashas-cauldron-of-everything.index" />
+		</update>
+	</info>
+	<files>		
+		<!-- Misc -->
+		<file name="class-eldritch-champion.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/tashas-cauldron-of-everything/eldritch-invocations.xml" />
+	</files>
+</index>
