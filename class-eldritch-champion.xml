@@ -458,7 +458,7 @@
 			<p>You are a natural at navigating the subtleties of politics and society. After speaking with a humanoid for at least 1 minute, you can add half your Intelligence modifier (rounded up) to your Charisma and Wisdom skill checks involving this individual.</p>
 		</description>
 		<sheet>
-			<description>You are a natural at navigating the subtleties of politics and society. After speaking with a humanoid for at least 1 minute, you can add half your Intelligence modifier (rounded up) to your CHarisma and Wisdom skill checks involving this individual.</description>
+			<description>You are a natural at navigating the subtleties of politics and society. After speaking with a humanoid for at least 1 minute, you can add half your Intelligence modifier (rounded up) to your Charisma and Wisdom skill checks involving this individual.</description>
 		</sheet>
 	</element>
 	<element name="Eldritch Gaze" type="Class Feature" source="u/alamo76" id="ID_UA_CLASS_FEATURE_ARCANESECRETS_ELDRITCHGAZE">
