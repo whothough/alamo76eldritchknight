@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.1" encoding="utf-8" ?>
 <index>
 	<info>
 		<name>Eldritch Champion</name>
@@ -10,5 +10,6 @@
 		<!-- Misc -->
 		<file name="class-eldritch-champion.xml" url="https://raw.githubusercontent.com/whothough/alamo76eldritchknight/main/class-eldritch-champion.xml" />
 		<file name="mark-of-making-changeling.xml" url="https://raw.githubusercontent.com/whothough/alamo76eldritchknight/main/mark-of-making-changeling.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/whothough/alamo76eldritchknight/main/spells.xml" />
 	</files>
 </index>
