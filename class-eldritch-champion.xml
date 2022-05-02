@@ -643,7 +643,7 @@
 			<grant type="Archetype Feature" id="ID_UA_MYSTICORDER_FEATURE_ELEMENTALSTANCES" level="3" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" level="3" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" level="3" />
-			<grant type="Language" name="Language (Order of the Essences)" number="1" level="3" />
+			<select type="Language" name="Language (Order of the Essences)" number="1" level="3" />
 			<grant type="Archetype Feature" id="ID_UA_MYSTICORDER_FEATURE_IMPROVISEDSTANCE" level="6" />
 		</rules>
 	</element>
